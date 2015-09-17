@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fakeRepository_T.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IRepository_T.cs" />
     <Compile Include="IService.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="RootClass.cs" />
     <Compile Include="ServiceBase_T.cs" />
+    <Compile Include="SystemTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
