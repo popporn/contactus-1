@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactUs.DataAccess", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactUs.Web", "ContactUs.Web\ContactUs.Web.csproj", "{3752D91B-A511-4CD7-BF2B-4DD56FA8FC61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFX.Core", "GFX.Core\GFX.Core.csproj", "{1372849E-3CA2-426C-B3B6-52B20CED2401}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3752D91B-A511-4CD7-BF2B-4DD56FA8FC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3752D91B-A511-4CD7-BF2B-4DD56FA8FC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3752D91B-A511-4CD7-BF2B-4DD56FA8FC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1372849E-3CA2-426C-B3B6-52B20CED2401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1372849E-3CA2-426C-B3B6-52B20CED2401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1372849E-3CA2-426C-B3B6-52B20CED2401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1372849E-3CA2-426C-B3B6-52B20CED2401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

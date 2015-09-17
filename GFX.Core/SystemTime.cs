@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Data.Entity;
-
 namespace GFX.Core
 {
-    public interface IRepository
+    class SystemTime
     {
-        DbContext Context { get; set; }
     }
 }
