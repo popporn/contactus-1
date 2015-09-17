@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -169,6 +170,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ContactUsIndexVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -226,6 +228,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +248,10 @@
     <ProjectReference Include="..\ContactUs.Services\ContactUs.Services.csproj">
       <Project>{3bff1789-1950-49fe-aaac-b4d82ff978df}</Project>
       <Name>ContactUs.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GFX.Core\GFX.Core.csproj">
+      <Project>{1372849e-3ca2-426c-b3b6-52b20ced2401}</Project>
+      <Name>GFX.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

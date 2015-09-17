@@ -1,0 +1,45 @@
+﻿@using ContactUs.Web.ViewModels
+@model ContactUsIndexVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome to the Ticket system</h2>
+
+<div class="well well-sm">
+    We have @ViewBag.Count tickets
+</div>
+
+<div class="well">
+    @using (Html.BeginForm("SubmitTicket", "ContactUs"))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.Title, null, new { @class = "form-control" })
+            <div class="text-danger">
+                @Html.ValidationMessageFor(m => m.Title)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.TextAreaFor(m => m.Body, 5, 60, new { @class = "form-control" })
+            <div class="text-danger">
+                @Html.ValidationMessageFor(m => m.Body)
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-info btn-lg">
+                Submit new Ticket
+            </button>
+        </div>
+    }
+</div>
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@*@using (Html.BeginForm("AddSampleTicket", "ContactUs")) {
+      <button class="btn btn-success">
+        Add Sample Ticket
+      </button>
+    }*@
