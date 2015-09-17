@@ -53,5 +53,13 @@ namespace ContactUs.Web.Controllers
             }
             return View(item);
         }
+        public ActionResult Browse()
+        {
+            var q = from t in app.Tickets.All()
+                    orderby t.LastActivityDate descending
+                    select t;
+            var tickets = q.ToList();
+            return View(tickets);
+        }
     }
 }
