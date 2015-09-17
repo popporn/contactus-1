@@ -1,0 +1,32 @@
+﻿@using ContactUs.Models
+@model IEnumerable<Ticket>
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browse Tickets</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Last Act. Date</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in Model)
+        {
+            <tr>
+                <td><code>@t.Id</code></td>
+                <td>@t.Title</td>
+                <td>@t.LastActivityDate</td>
+                <td>@t.Status</td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>
